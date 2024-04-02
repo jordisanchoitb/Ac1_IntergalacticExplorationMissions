@@ -29,7 +29,6 @@ namespace Ac1_IntergalacticExplorationMissions
                     }
                     Console.Write("Player: ");
                     player = Console.ReadLine().Trim();
-                    Console.WriteLine(player.Replace(' ', '_'));
                     error = true;
                 } while (!Methods.CheckPlayer(player));
                 error = false;
@@ -42,7 +41,6 @@ namespace Ac1_IntergalacticExplorationMissions
                     }
                     Console.Write("Mission: ");
                     mission = Console.ReadLine().Trim();
-                    Console.WriteLine(mission.Replace(' ', '_'));
                     error = true;
                 } while (!Methods.CheckMission(mission));
                 error = false;
