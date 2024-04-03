@@ -47,6 +47,7 @@ namespace Ac1_IntergalacticExplorationMissions
                     error = true;
                 } while (!Methods.CheckPlayer(player));
                 error = false;
+                Console.WriteLine();
                 Console.WriteLine(MsgMission);
                 do
                 {
@@ -59,6 +60,7 @@ namespace Ac1_IntergalacticExplorationMissions
                     error = true;
                 } while (!Methods.CheckMission(mission));
                 error = false;
+                Console.WriteLine();
                 Console.WriteLine(MsgScoring);
                 do
                 {
@@ -81,7 +83,7 @@ namespace Ac1_IntergalacticExplorationMissions
             Console.WriteLine(SeparatorRanking);
             foreach (Score score in ranking)
             {
-                Console.WriteLine($"{score.Player} - {score.Mission} - {score.Scoring}");
+                Console.WriteLine(score);
             }
         }
     }
