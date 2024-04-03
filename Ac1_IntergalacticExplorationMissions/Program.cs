@@ -21,7 +21,7 @@ namespace Ac1_IntergalacticExplorationMissions
             const string MsgRanking = "Rànquing de puntuacions úniques";
             const string SeparatorRanking = "===============================";
 
-            const int MAX_SCORES = 5;
+            const int MAX_SCORES = 10;
             List<Score> scores = new List<Score>();
             string player;
             string mission;
